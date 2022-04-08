@@ -18,15 +18,17 @@ INDEX_TEMPLATE = r"""
             <h2>${header}</h2>
         % endif
         <p>
-        % for name in names:
-            <li><a href="${name}">${name}</a></li>
-        % endfor
+            <ul>
+                % for name in names:
+                    <li><a href="${name}">${name}</a></li>
+                % endfor
+            </ul>
         </p>
     </body>
 </html>
 """
 
-EXCLUDED = ['index.html', 'make_index.py']
+EXCLUDED = ['index.html', 'make_index.py', 'refresh_indexes.py', '.git']
 
 import os
 import argparse
