@@ -5,7 +5,6 @@ refresh_indexes.py
 
 import os
 
-EXCLUDED = ['index.html', 'make_index.py']
 
 def index_dir(dir):
     subdir_present = False

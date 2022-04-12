@@ -28,7 +28,7 @@ INDEX_TEMPLATE = r"""
 </html>
 """
 
-EXCLUDED = ['index.html', 'make_index.py', 'refresh_indexes.py', '.git']
+EXCLUDED = ['index.html', 'make_index.py', 'refresh_indexes.py', '.git', 'README.md']
 
 import os
 import argparse
