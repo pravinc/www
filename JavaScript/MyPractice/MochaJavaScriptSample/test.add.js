@@ -1,6 +1,8 @@
-// referece: https://github.com/browserify/commonjs-assert
+// reference: https://requirejs.org/
+// reference: https://github.com/browserify/commonjs-assert
 // const assert = require('assert');
 
+// https://stackoverflow.com/questions/58211880/uncaught-syntaxerror-cannot-use-import-statement-outside-a-module-when-import
 // import assert from 'assert';
 
 // reference: https://cdn.jsdelivr.net/gh/chaijs/chai@v4.3.4/test/should.js
