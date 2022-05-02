@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript String Methods</h2>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<button onclick="myFunction()">Try it</button>
+<script>
+function myFunction() {
+
+    //charAt(position)
+    var myString = "Here We Go!";
+    document.getElementById("demo1").innerHTML = myString.charAt(9);
+
+    //concat(v1, v2,..)
+    var message="Everyone";
+    var final=message.concat(" is", " happy.");
+    document.getElementById("demo2").innerHTML = final;
+    //output:Everyone is happy."
+
+    //fromCharCode(c1, c2,...)
+    document.getElementById("demo3").innerHTML = String.fromCharCode(72,69,76,76,79);
+    //output: HELLO
+
+    //indexOf(char/substring)
+    var sentence="Hi, Let's start javascript";
+    if (sentence.indexOf("start")){
+        document.getElementById("demo4").innerHTML= "Demo of index of";
+    }
+
+    //lastIndexOf(substr, [start])
+    var myString = "javascript rocks";
+    document.getElementById("demo5").innerHTML =myString.lastIndexOf("r");
+    //output: 11
+
+    //match(regexp) //select integers only
+    var intRegex = /[0-9 -()+]+$/;
+    var myNumber = "999";
+    document.getElementById("demo6").innerHTML=myNumber.match(intRegex);
+    //output: 999
+
+    var myString = "999 JS Coders";
+    document.getElementById("demo7").innerHTML =myString.match(intRegex);
+    //output: null
+
+    //replace(substr, replacetext)
+    var myString = "Java Coders";
+    document.getElementById("demo8").innerHTML =myString.replace(/Java/i, "JavaScript");
+    //output: JavaScript Coders
+
+    //toLowerCase()
+    var myString = "JAVASCRIPT ROCKS";
+    myString = myString.toLowerCase();
+    document.getElementById("demo9").innerHTML =myString;
+    //output: javascript rocks
+
+    //toUpperCase()
+    var myString = "javascript rocks";
+    myString = myString.toUpperCase();
+    document.getElementById("demo10").innerHTML =myString;
+    //output: JAVASCRIPT ROCKS
+
+}
+</script>
+</body>
+</html>

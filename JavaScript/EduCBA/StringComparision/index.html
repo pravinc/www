@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>String Comparison In Javascript</h1>
+<p id="temporary1"></p>
+<p id="temporary2"></p>
+<p id="temporary3"></p>
+<p id="temporary4"></p>
+<p id="temporary5"></p>
+<p id="temporary6"></p>
+<p id="temporary7"></p>
+<p id="temporary8"></p>
+<script>
+var string1 = new String('Strings In Javascript');
+var string2 = new String('Strings In Javascript');
+var string3 = 'Strings In Javascript';
+var string4 = string1;
+document.getElementById("temporary1").innerHTML =
+            "string1 == string2 => " + (string1 == string2);  // both are objects
+document.getElementById("temporary2").innerHTML =
+            "string1 == string3 => " + (string1 == string3);  // 'string3' is string
+document.getElementById("temporary3").innerHTML =
+            "string1 === string4 => " + (string1 === string4);  // same object
+document.getElementById("temporary4").innerHTML = "typeof(string1) => " + typeof(string1);
+document.getElementById("temporary5").innerHTML = "typeof(string2) => " + typeof(string2);
+document.getElementById("temporary6").innerHTML = "typeof(string3) => " + typeof(string3);
+document.getElementById("temporary7").innerHTML = "typeof(string4) => " + typeof(string4);
+document.getElementById("temporary8").innerHTML = "typeof(str3) => " + typeof(str3);
+</script>
+</body>
+</html>
