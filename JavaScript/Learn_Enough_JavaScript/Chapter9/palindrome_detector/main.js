@@ -35,6 +35,8 @@ function checkAndPrintResult(string) {
     }
 }
 
+// https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
+
 // window.onload = function() {
 document.addEventListener("DOMContentLoaded", function() {
     let button = document.querySelector("#palindromeTester");
