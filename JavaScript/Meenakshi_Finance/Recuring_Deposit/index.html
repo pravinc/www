@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Savings Account Interest Calculator</title>
+
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+      }
+
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      th {
+        background-color: red;
+      }
+    </style>
+
+    <script src="savings_interest.js"></script>
+
+    <!-- <script type="text/javascript"> -->
+    <script>
+      window.onload = function() {
+        const form = document.querySelector('form');
+        form.addEventListener('submit', calculate_interest);
+      };
+    </script>
+  </head>
+  <body>
+    <form id="user_inputs" method="post" action="">
+      <label for="instalment_premium">Instalment Premium: </label><br>
+      <input type="number" name="instalment_premium" id="instalment_premium"><br><br>
+      <label for="interest_percentage">Interest Rate in Percentage: </label><br>
+      <input type="number" name="interest_percentage" id="interest_percentage"><br><br>
+      <label for="compound_period_months">Compounding Period in Months: </label><br>
+      <input type="number" name="compound_period_months" id="compound_period_months"><br><br>
+      <label for="tenure_months">Tenure in Months: </label><br>
+      <input type="number" name="tenure_months" id="tenure_months"><br><br>
+      <label for="paying_term">Premium Paying Term in Months: </label><br>
+      <input type="number" name="paying_term" id="paying_term"><br><br>
+      <label for="premium_frequency">Premium Frequency in Months: </label><br>
+      <input type="number" name="premium_frequency" id="premium_frequency"><br><br>
+      <input type="submit">
+    </form>
+    <p id="print_parent">
+      <!-- <p>InitialAmount: 10000<br>Months: 5<br>FinalAmount: 10100</p>
+      <table>
+        <tr>
+          <th id="month">Month</th>
+          <th id="interest">Interest</th>
+          <th id="total">Total</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>100</td>
+          <td>10100</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>100</td>
+          <td>10100</td>
+        </tr>
+      </table> -->
+    </p>
+  </body>
+</html>
