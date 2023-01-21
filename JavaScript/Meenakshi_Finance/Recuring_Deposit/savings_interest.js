@@ -1,5 +1,7 @@
 // https://flaviocopes.com/form-events/
 
+// https://groww.in/calculators/rd-calculator
+// https://www.hdfcbank.com/personal/tools-and-calculators/rd-calculator
 function calculate_interest(event) {
     event.preventDefault();
 
