@@ -1,0 +1,16 @@
+
+div:hover > .plink {
+  opacity:1
+}
+
+a.plink {
+  opacity: 0;
+  padding-left: 8px;
+  font-size: 0.8em;
+  font-weight: 600;
+  transition: opacity 180ms ease-in-out;
+}
+
+a.plink::before {
+  content:'\00B6'
+}
