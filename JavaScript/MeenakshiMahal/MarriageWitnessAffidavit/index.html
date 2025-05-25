@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Witness Affidavit</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f9f9f9; }
+        .container { max-width: 600px; margin: auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px #ccc; }
+        h1 { text-align: center; }
+        form { margin-bottom: 30px; }
+        label { display: block; margin-top: 15px; }
+        input, select { width: 100%; padding: 8px; margin-top: 5px; border-radius: 4px; border: 1px solid #ccc; }
+        button { margin-top: 20px; padding: 10px 20px; border: none; background: #4CAF50; color: #fff; border-radius: 4px; cursor: pointer; font-size: 16px; }
+        button#printBtn { background: #2196F3; margin-left: 10px; }
+        .letter { background: #f4f4f4; padding: 20px; border-radius: 6px; margin-top: 20px; min-height: 180px; }
+        input[name="bridegroom"], input[name="bride"] {
+            font-family: Arial, 'Latha', 'Noto Sans Tamil', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Marriage Witness Affidavit</h1>
+        <form id="marriageForm">
+            <label for="bridegroom">Name of Bridegroom (English or Tamil):</label>
+            <input type="text" id="bridegroom" name="bridegroom" required lang="ta">
+
+            <label for="bride">Name of Bride (English or Tamil):</label>
+            <input type="text" id="bride" name="bride" required lang="ta">
+
+            <label for="date">Date of Marriage:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Generate Letter</button>
+            <button type="button" id="printBtn" style="display:none;">Print Letter</button>
+        </form>
+        <div class="letter" id="letter"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
